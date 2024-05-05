@@ -85,6 +85,13 @@ block__element--modifier
 
 재사용하는 것이라면 그냥 고유한 이름을 붙여도 된다.
 
+```
+.header_logo img
+.header_logo_img
+```
+
+.hdeader_logo 하고나서 img 태그를 찾는 것은 수많은 img 태그를 모두 다 훑어보면서 .header_logo 를 찾는 것이므로 매우 비경제적이다. 따라서 번거롭더라도 class 와 id 지정하는 것을 추천
+
 </details>
 
 <details>

@@ -31,7 +31,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 button {
@@ -41,4 +41,90 @@ button {
 }
 button:focus {
   outline: solid 1px var(--color-accent);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header_logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_logo_img {
+  width: 36px;
+  height: 36px;
+}
+
+.header_logo_title {
+  font-size: 1.8rem;
+  /* 상대적인 개념이므로 브라우저 기본에서 1.8배라는 말 */
+}
+
+.header_menu {
+  display: flex;
+  gap: 4px;
+}
+.header_menu_item {
+  padding: 8px 16px;
+}
+
+.header_menu_item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header_menu_item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Home */
+#Home {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.home_avatoar {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+  border-radius: 100%;
+}
+
+.home_title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.home_title--strong {
+  color: var(--color-accent);
+}
+.home_description {
+  font-size: 1.3rem;
+}
+.home_contact {
+  display: inline-block;
+  font-weight: bold;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  border-radius: 4px;
+}
+
+.home_contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
 }
