@@ -221,7 +221,7 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 25px 50px -12px #3b82f620;
+  box-shadow: 0 25px 50px -12px #3bb8f620;
 }
 
 .skills_coding {
@@ -243,4 +243,27 @@ button:focus {
   color: var(--color-accent);
   margin: 1rem 0;
   font-size: 1.2rem;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.bar_metadata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar_bg {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary-variant);
+}
+
+.bar_value {
+  height: 3px;
+  background-color: var(--color-accent);
 }
