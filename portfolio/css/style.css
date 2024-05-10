@@ -208,3 +208,39 @@ button:focus {
   color: var(--color-primary-variant);
   font-size: 0.8rem;
 }
+
+/* Skills */
+#Skills {
+  background-color: var(--color-primary-variant);
+  color: var(--color-text);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px #3b82f620;
+}
+
+.skills_coding {
+  grid-row: span 2;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+
+.skills_tools {
+  padding: 1rem;
+}
+
+.skills_etc {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  filter: brightness(150%);
+}
+.skills_title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
