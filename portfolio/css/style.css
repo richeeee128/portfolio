@@ -67,6 +67,7 @@ button:focus {
 }
 
 .header {
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
@@ -266,4 +267,99 @@ button:focus {
 .bar_value {
   height: 3px;
   background-color: var(--color-accent);
+}
+
+/* work */
+#Work {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.categories {
+  display: flex;
+  margin: 2.5rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category {
+  white-space: nowrap;
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  padding: 0.5rem 3rem;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+}
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.category_count {
+  opacity: 0;
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-accent-variant);
+  color: var(--color-text);
+  transition: all 300ms ease-in;
+}
+.category--selected .category_count,
+.category:hover .category_count {
+  opacity: 1;
+  top: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project_img {
+  width: 100%;
+}
+
+.project_metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 250ms ease-in;
+  transform: translateY(-10px);
+}
+.project_metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project_title:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: var(--color-accent);
+  margin: 0.5rem;
 }
