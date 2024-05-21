@@ -163,6 +163,7 @@ button:focus {
 }
 
 .major {
+  width: 100%;
   background-color: var(--color-primary-variant);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -430,4 +431,78 @@ button:focus {
 }
 .contact_link:hover {
   color: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_nav {
+    width: 100%;
+  }
+
+  .header_menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  #Home {
+    padding-bottom: 2.5rem;
+  }
+
+  .home_title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .majors {
+    flex-direction: column;
+    align-items: center;
+  }
+  .major {
+    max-width: 25rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial {
+    flex-direction: column;
+  }
+  .testimonial:nth-child(even) .testimonial_img {
+    order: 0;
+  }
+
+  .arrow-up {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
 }
