@@ -27,7 +27,7 @@ charset(문자열 세트) : UTF-8 인코딩
 
 </details>
 
-<!-- <details> -->
+<details>
 <summary>BODY 정리</summary>
 
 head - 메타데이터 (웹사이트에 대한 설명) : 책 표지  
@@ -91,6 +91,16 @@ block__element--modifier
 ```
 
 .hdeader_logo 하고나서 img 태그를 찾는 것은 수많은 img 태그를 모두 다 훑어보면서 .header_logo 를 찾는 것이므로 매우 비경제적이다. 따라서 번거롭더라도 class 와 id 지정하는 것을 추천
+
+### 스타일링으로 간단하게 위치 변경
+
+```
+.testimonial:nth-child(even) .testimonial_img {
+  order: 1;
+```
+
+order - 현재 요소의 배치 순서를 지정함. 따라서 0번으로 시작한 img를 1로 지정함으로써 뒤로 밀려나게 되는 것임.
+그리고 even을 이용하여 짝수마다 변경. testimonial이 하나 더 생기면 그것은 이미지가 뒤에 있는 상태로 생성됨.
 
 </details>
 
