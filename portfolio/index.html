@@ -31,7 +31,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
-    <script src="src/main.js"></script>
+    <script defer type="module" src="src/main.js"></script>
+    <script defer type="module" src="src/projects.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -41,6 +42,9 @@
         <h1 class="header_logo_title"><a href="#">Lee ChaeYeon</a></h1>
       </div>
       <nav class="header_nav">
+        <button class="header__toggle" aria-label="navigation menu toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <ul class="header_menu">
           <li><a class="header_menu_item active" href="#Home">Home</a></li>
           <li><a class="header_menu_item" href="#About">About</a></li>
@@ -223,28 +227,28 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category_count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="front-end">
                 Front-end <span class="category_count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="back-end">
                 Back-end <span class="category_count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category_count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -257,7 +261,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -270,7 +274,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -283,7 +287,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -296,7 +300,7 @@
                 </div></a
               >
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -309,7 +313,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -322,7 +326,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
@@ -335,7 +339,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank"
                 ><img
                   class="project_img"
